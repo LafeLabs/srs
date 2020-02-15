@@ -24,3 +24,66 @@
   - Given that there could be easily this universe of open servers all running the same basic code, we can build a collection of 1 quadrillion(10 billion times 100 thousand) self-replicating documents like this one. 
   - If these documents are used to document all the things we interact with in our lives such as technology, culture, economics, philosophical ideas, art, etc, the space in which we can build a self-replicating Universe of Things which represent all things we can desire, making the Open Web a medium for exchange of self-replicating things based on our desires...
   
+
+## 4. Self Replicating Sets
+
+### Motivation and definitions
+
+naive set theory.  sets as collections of abstract objects without the ZF axioms. sets are denoted by curly braces
+
+### This Set
+
+<pre>
+On Self Replicating Sets = 
+{
+  The desire of the author to describe self-replicating sets,
+  A description of self-replicating sets,
+  The means to replicate this set
+}
+</pre>
+
+<pre>
+Desire = 
+{
+  Desire to share beautiful mathematics with other people,
+  Desire to create ideas which can empower people to change society with their will
+}
+</pre>
+
+<pre>
+Description = 
+{
+  narrative structure,
+  definitions,
+  digital text document,
+  pdf document,
+  references
+}
+</pre>
+
+<pre>
+Replication = 
+{
+  code replication,
+  server replication,
+  pdf replication,
+  media: email, post cards, posters, signs, commercial social media,
+  manuscript editing to evolve and fork the Document
+}
+</pre>
+
+
+## 5. Implications
+
+*Language is how the mind parses reality.*
+
+*From each according to their desire, to each according to their desire.*
+
+  By building a universe of self replicating things based on the desire of the author of the documents we can build a universe for our minds to live in 
+
+## 6. References
+
+[1]  Von Neumann
+[2]  Merkle
+[3]  Drexler
+

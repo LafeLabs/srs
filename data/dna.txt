@@ -4,8 +4,6 @@
         "index.html",
         "pageeditor.html"
     ],
-    "javascript": [],
-    "iconsymbols": [],
     "data": [
         "dna.txt"
     ],
