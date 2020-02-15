@@ -5,7 +5,17 @@
 
 [link to edit page](pageeditor.html)
 
-## 1. Theory of Self-Replication
+## 1. Computer Science and the Theory of Self-Replication
+
+   Throughout the history of modern computing machines, people have contemplated the idea self-replicating machines.  At the dawn of the information age, John Von Neumann in particular devoted thought to the subject, creating a blueprint that people continue to use both for understanding hypothetical self replicating machines and for understanding the architecture of existing computing machines.  At the same time, Alan Turing developed a similar toy model for how generalized computing machines work, which is taught in basic computer science classes to this day.  We will not delve very deeply into these models, but will instead present a very crude sketch of them in order to discuss the assumptions made by computer scientists in the models they build to understand their world.  
+
+The Turing model of a computer consists of an infinite tape of 1's and 0's along with a machine to both read and change the state of cells in the tape.  The string of numbers describes instructions for the machine, which follows those instructions by moving the tape back and forth and changing numbers from one state to another.  Turing was able to show that this toy model of an abstract computing machine could be proven mathematically to be equivalent to any other abstract toy model of any other kind of computer, including the complex machines built today(hence the continued use of this model in teaching and scholarship).
+
+Before discussing this model's limitations we must say a word about the nature of scientific models.  When we investigate a thing using the scientific method we have in principle the entirety of science knowledge to call on, built up from a vast number of models in different fields and sub-fields.  For example, if we are presented with a rock to analyze, a physicist might ignore everything but the crystal structure of some prominent material in the rock and bring the modern understanding of crystals to bear on it.  The micro-biologist will only be interested in the aspects of the rock that interact with the organisms on the surface, while the ecologist will be interested in that but primarily how the rock regulates the flow of water through the ecosystem of which it is a part.  As scientists we may agree that models of surface chemistry for microbes, models of how atoms arrange in crystals, and how water flows through rocky soil are all "good science", but in any given context the model we choose to focus on depends on that context.  
+
+It is our assertion that while the model of Turing and his contemporaries is not wrong that it is deeply misleading because in most cases it does not describe the most relevant aspects of the machines we call "computers".  Computers do, of course, compute.  That computation is described by the mathematics of computation.  They also create heat, described by thermodynamics, and are we therefore to call them heaters?  They keep time with extremely fast clocks, do we simply call them clocks?  No.  But what actually are they? What is the model for a modern computer which is most useful when trying to understand them?  In this era, in the year 2020, the most useful model for a computer is the one that describes how they have totally changed all aspects of global society in a relatively short time.  For this we must expand the models available, and in particular we must focus on a specific shortcoming not just of mid 20th century computer scientists, but of most scientists in the "modern" era, namely our refusal to put ourselves and the societies of which we are a part into the systems which we study.
+
+
 
   - Von neummann
   - Merkle and Drexler
@@ -101,4 +111,5 @@ The goal of the technological complete set, with evolution to guide to that goal
 [4]  penrose
 [5]  dawkins
 [6]  reggia
-[7]  turing
+[7]  turing...but mostly wikipedia
+
