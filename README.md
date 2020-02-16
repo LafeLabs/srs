@@ -75,7 +75,7 @@ In order to understand the motivation of this work it is necessary to trace very
 
 People like Bertrand Russel pointed out that such systems can create paradoxes that make it impossible to create a self-consistent system of logic/truth/math.  This paradox can be summarized by considering the "list of lists that do not list themselves".  The list defined here is a list of lists.  Is this list on itself?  If it is, it cannot be by the definition of itself.  If it is not, it must be by the same reason.  In spite of having publicly stated this paradox, Russel and his co-author Alfred North Whitehead wrote what is now considered a seminal work in mathematics *Principa Mathematica*(not to be confused with a book by Isaac Newton of almost the same name), which attempted to create such a universal bases of mathematics.  While the achievements of 20th century set theory, logic and analysis are fantastic and useful, they ultimately failed in their goals, and this was proven mathematically by Kurt Goedel in 1931.  
 
-In the post-Goedel world we should take for granted that no universal logical construction can be built which defines truth and falsehood without contradiction.  Goedel's proof presented a fork in the road intellectually.  We could have used this as the sign to go back through mathematics, accept contradiction as part of life, and build a math based on desired outcomes.  In some sense this is what society did by mostly ignoring the work of most post war mathematics(with some very narrow exceptions like number theory for cryptography).  While professional mathematicians took the opposite fork, building increasingly complex systems based on each other, where a vast tower of ideas linked by formal logic build up from the axiomatic set theory of the early 1900s to create a bridge to nowhere.  The sole purpose of most mathematical concepts and theory today are to advance the career of working mathematicians.  We forget, both outside and inside mathematics, that people used to believe ideas in math actually *mattered*.  We also forget that mathematics has for thousands of years been one of the most powerful tools the human mind has for understanding and interacting with our world, and indeed mathematicians have traditionally played a central role in the largest power structures throughtout history.
+In the post-Goedel world we should take for granted that no universal logical construction can be built which defines truth and falsehood without contradiction.  Goedel's proof presented a fork in the road intellectually.  We could have used this as the sign to go back through mathematics, accept contradiction as part of life, and build a math based on desired outcomes.  In some sense this is what society did by mostly ignoring the work of most post war mathematics(with some very narrow exceptions like number theory for cryptography).  While professional mathematicians took the opposite fork, building increasingly complex systems based on each other, where a vast tower of ideas linked by formal logic built up from the axiomatic set theory of the early 1900s to create a bridge to nowhere.  The sole purpose of most mathematical concepts and theory today are to advance the career of working mathematicians.  We forget, both outside and inside mathematics, that people used to believe ideas in math actually *mattered*.  We also forget that mathematics has for thousands of years been one of the most powerful tools the human mind has for understanding and interacting with our world, and indeed mathematicians have traditionally played a central role in the largest power structures throughtout history.
 
 Having proved that a universal truth machine cannot exist, we may now abandon the project of early 20th century mathematicians such as Russel and Whitehead and proceed to reconstruct axioms of set theory based on a *desired outcome*.  This system will not be judged on its ability to prove theorems, eliminate logical contradictions, or get tenure for math professors.  It will be judged *only* on its ability to improve the human condition.  It is time, finally, after almost a full century, to inherit the true legacy of Goedel.
 
@@ -147,16 +147,28 @@ Replication =
 
 ### Code and replication of code
 
-- replicator.php
-- dna.txt
-- saver.php
-- loader.php
-- README.md
-- editor.php
-- index.html
-- pageeditor.html
+The elements of the self-replicating code that can propagate this document across the Open web are as follows:
+
+- [replicator.php](php/replicator.txt)
+- [dna.txt](data/dna.txt)
+- [filesaver.php](php/filesaver.txt)
+- [fileloader.php](php/fileloader.txt)
+- [README.md](README.md)
+- [editor.php](php/editor.txt)
+- [index.html](index.html)
+- [pageeditor.html](pageeditor.html)
+- [dnagenerator.php](php/dnagenerator.txt)
+- [text2php.php](php/text2php.txt)
+
+All of this code can be edited using the program [editor.php](editor.php) which runs on any server that has [php](https://www.php.net/) installed(most web servers).  The file dna.txt represents this list of files, which replicator.php uses to fetch them and copy them to a new server(see below).  README is the text of this document itself, and the name of that file is set by the standards used on [Github](https://github.com/) so that by default any self-replicating document that's put up on Github has its content readable immediately.  The format of the README file is by default [Markdown](https://daringfireball.net/projects/markdown/syntax).  The save and load scripts are required to edit files on the server, and pageeditor is the page that uses these files to edit the main manuscript README.md.  All php files are stored as .txt files so that they can be readable and easily accessed from the open web.  The program text2php.php copies all the files in the directory /
 
 ## Server replication
+
+  In order for replication to take place from server to server we need the ability to "colonize" new web servers with this code.  This is done in any of several ways.  Right now the main way is to buy a domain(usually about 10 dollars for the first year), pay for web hosting(5-20 dollars per month), then put the replicator program on the new server and run it.  The second method used is to put a web server on a Raspberry Pi, a computer that can be bought for as little as 35 dollars and fit in a pocket which is excellent for serving web files over a local network.  This allows for a grey area open web that is open to anyone on a local wifi network, and can see the rest of the Open Web but cannot be accessed by users outside that wifi network.  In either case, the replication of the server consists of placing the file "replicator.php" in the main web directory of the new server, then pointing a web browser to [your new servers web address]/replicator.php. This will then cause the program to run, copying the rest of the system and linking to the main page which will display the newly replicated document. 
+
+The technical details of this process must be described briefly here in order for this document to truly self-replicate.  We recommend buying a domain and getting shared hosting on [dreamhost](https://www.dreamhost.com/) because they have proven to work with this code and are affordable and not a scam. One can also use any of several free web hosting options, including [000webhost](https://www.000webhost.com/).  In both cases you will find a file editor screen(this can be a little frustrating to find but always exists) which will allow you to create new files and edit them. Use this to create the file replicator.php and copy the code from [here](php/replicator.txt) into it, save it and close it.
+
+
 
  - buy domain, get hosting, copy
  - raspberry pi
