@@ -53,7 +53,7 @@ All that said, it is the assertion of this paper that the existing technological
   - a more accurate description of "tech" which is a more powerful descriptor for what we call "computers" than the Turing machine, including: venture capital,media, global finance,central banks, government intervention, education, culture, geography, mining(with extreme specificity), landfill, metals processing, military force, mining, oil, global materials transport
   - viral information vs. complex replicating systems
 
-## 3. The Power of the Open Web
+## 3. The *Potential* Power of the Open Web
 
   What is the Web?  The Web is not the Internet.  The Internet is a network of computers that connects almost all computers in the world, both physically and with some software protocols. This network traces its origins to the network of military and academic(but military-funded) computers that emerged from ARPA back before the modern commercial Internet, going back to the end of the 1960s.  The Internet can in principle be used to exchange any information and treats information in the same abstract sense as in the models of theoretical computer science discussed above.   
 
@@ -65,22 +65,14 @@ This universe of information exists on web servers which can in general be made 
 
 The power of a fully self-replicating and evolving Open Web on this scale is that documents can describe the replication of *physical* things, and the replication of the documents can include replication of the things.  If things we use in our lives are replicated rather than purchased or mined, it changes the basic assumptions about what value is.  Note that like "set", "thing" is used in a maximally general sense to include things like "a feeling of awe at the largeness of a tree" or "the tendency of cats with white fur to cause a change in the appearance of black clothing".  The word "thing" is used here as a placeholder for *anything* which human language can be made to describe or point to.
 
-In order to build these documents we must first define the idea of what exactly a self-replicating document is, and how it fits into more general concepts of self-replication.  To that end we will take an excursion into the math known as set theory.
-
-If these documents are used to document all the things we interact with in our lives such as technology, culture, economics, philosophical ideas, art, etc, the space in which we can build a self-replicating Universe of Things which represent all things we can desire, making the Open Web a medium for exchange of self-replicating things based on our desires...
-
-
-  - add up mobile phones, laptops, desktops, server farms and there are easily 10 potential web servers per person for a 10 billion person population.  Each machine can be assumed to be able to host 10 gigabytes, or 100 gigabytes per person.  If we consider the space of files like this one that can fit in under 1 megabyte or 0.001 gigabytes, there can be 100,000 text files like this one *for each person on Earth*.
-  - Given that there could be easily this universe of open servers all running the same basic code, we can build a collection of 1 quadrillion(10 billion times 100 thousand) self-replicating documents like this one. 
-  - If these documents are used to document all the things we interact with in our lives such as technology, culture, economics, philosophical ideas, art, etc, the space in which we can build a self-replicating Universe of Things which represent all things we can desire, making the Open Web a medium for exchange of self-replicating things based on our desires...
-  - evaluation of complexity of fully networked collection of evolving documents, comparison to brain of neurons
+In order to build these documents we must first define the idea of what exactly a self-replicating document is, and how it fits into more general concepts of self-replication.  To that end we will take an excursion into the math known as set theory, which is the next section of this paper.
 
   
 ## 4. Self Replicating Sets
 
 ### Motivation and definitions
 
-[Set theory](https://en.wikipedia.org/wiki/Set_theory), is the mathematical study of sets.   Sets are, to quote Wikpedia, ["...collections of objects"](https://en.wikipedia.org/wiki/Set_theory).  The idea of a set as a collection of "objects" considers the idea of the "object" at a level of generality perhaps shocking to non-mathematicians.  "Object" here can mean *anything*.  Mathematicians generally mean by "any object" any object which a mathematician might talk about.  However in principle it can be anything that anyone might talk about(as we seek to generalize these ideas beyond mathematics).  For the purpose of this work we well define a generalized object to be anything which human language can possibly describe.  Any word, symbol, or collection of words or symbols which point to something--that something is an "object".  And a "set" is just a collection of such general objects.  
+[Set theory](https://en.wikipedia.org/wiki/Set_theory), is the mathematical study of sets.   Sets are, to quote Wikipedia, ["...collections of objects"](https://en.wikipedia.org/wiki/Set_theory).  The idea of a set as a collection of "objects" considers the idea of the "object" at a level of generality perhaps shocking to non-mathematicians.  "Object" here can mean *anything*.  Mathematicians generally mean by "any object" any object which a mathematician might talk about.  However in principle it can be anything that anyone might talk about(as we seek to generalize these ideas beyond mathematics).  For the purpose of this work we well define a generalized object to be anything which human language can possibly describe.  Any word, symbol, or collection of words or symbols which point to something--that something is an "object".  And a "set" is just a collection of such general objects.  
 
 The notion of a generalized object is of course familiar to modern computer programmers who use the idea of "object oriented programming" to create generalized objects which are used to build linguistic handles in human language on computer programs.  Thus a modern programmer might define something abstract like "shopping-cart" for a e-commerce website, and then that object will have properties like "list of objects" and "total price".  We choose to take the path taken by foundational mathematics and have our basic concept from which all other concepts will be built be the collection of objects(which are themselves objects) be the fundamental idea.
 
