@@ -119,7 +119,7 @@ Description =
 }
 </pre>
 
-Now again we break off the replication methods from the thing being replicated.  Replication is to happen on the Open Web. That is, it must have self-contained and self-replicating code that can copy itself from any web server to any other, and be edited after being copied, then copied again from the new instance so that the information is totally decentralized and evolves naturally as it's copied and edited.  We also need this document to include instructions in human language(English for now) on how to replicate the whole system, by either buying a domain and setting up paid web hosting or building their own physically local web server to server the files.  This document will contain that information.  Furthermore, the replicator set must include the other media that are used to replicate the whole set, including content on commercial social media
+Now again we break off the replication methods from the thing being replicated.  Replication is to happen on the Open Web. That is, it must have self-contained and self-replicating code that can copy itself from any web server to any other, and be edited after being copied, then copied again from the new instance so that the information is totally decentralized and evolves naturally as it's copied and edited.  We also need this document to include instructions in human language(English for now) on how to replicate the whole system, by either buying a domain and setting up paid web hosting or building their own physically local web server to server the files.  This document will contain that information.  Furthermore, the replicator set must include the other media that are used to replicate the whole set, including content on commercial social media.  
 
 <pre>
 Replication = 
@@ -134,7 +134,51 @@ Replication =
 </pre>
 
 
-## 5. Implications
+### Code and replication of code
+
+- replicator.php
+- dna.txt
+- saver.php
+- loader.php
+- README.md
+- editor.php
+- index.html
+- pageeditor.html
+
+## Server replication
+
+ - buy domain, get hosting, copy
+ - raspberry pi
+ - server farm
+ - localhost
+
+
+### Pdf document
+
+ - print page to pdf
+ - pandoc+latex
+ - word(☠)
+ 
+### Other Media
+
+ - postcards
+    - mailed
+    - given away in person
+ - printouts
+ - posters
+ - signs 
+ - commercial social media
+ - emails
+ - elevator pitch
+
+### Evolution and forking
+
+ - edit, change replicator, copy, repeat
+ - working with github
+ - using pastebin
+ - forking and the power of infinite forks
+
+## 5. Conclusions
 
 We create sets that all contain the means to replicate.  Sets have a "primary element" which is the object of desire of the person replicating the set.  The basic prototype for a set is to have three elements: desire, the object of desire, and the means to replicate the whole set.  Sets generally have subsets, and the elements of those sets are also considered to be elements of the superset.  Basic axioms are not the same as ZFC, and must be investigated in further research.  
 
