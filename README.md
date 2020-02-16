@@ -69,8 +69,13 @@ The power of a fully self-replicating and evolving Open Web on this scale is tha
 
 In order to build these documents we must first define the idea of what exactly a self-replicating document is, and how it fits into more general concepts of self-replication.  To that end we will take an excursion into the math known as set theory.
 
+If these documents are used to document all the things we interact with in our lives such as technology, culture, economics, philosophical ideas, art, etc, the space in which we can build a self-replicating Universe of Things which represent all things we can desire, making the Open Web a medium for exchange of self-replicating things based on our desires...
 
+
+  - add up mobile phones, laptops, desktops, server farms and there are easily 10 potential web servers per person for a 10 billion person population.  Each machine can be assumed to be able to host 10 gigabytes, or 100 gigabytes per person.  If we consider the space of files like this one that can fit in under 1 megabyte or 0.001 gigabytes, there can be 100,000 text files like this one *for each person on Earth*.
+  - Given that there could be easily this universe of open servers all running the same basic code, we can build a collection of 1 quadrillion(10 billion times 100 thousand) self-replicating documents like this one. 
   - If these documents are used to document all the things we interact with in our lives such as technology, culture, economics, philosophical ideas, art, etc, the space in which we can build a self-replicating Universe of Things which represent all things we can desire, making the Open Web a medium for exchange of self-replicating things based on our desires...
+  - evaluation of complexity of fully networked collection of evolving documents, comparison to brain of neurons
 
   
 ## 4. Self Replicating Sets
@@ -78,6 +83,8 @@ In order to build these documents we must first define the idea of what exactly 
 ### Motivation and definitions
 
 naive set theory.  sets as collections of abstract objects without the ZF axioms. sets are denoted by curly braces
+
+The work of Russel and Whitehead. The conclusions of Goedel and the post Goedel world of mathematics.  A fork in the road: instead of building more obscure castles in the sky after Goedel we could have turned to the world and accepted that while formal math cannot describe the Universe an absolute sense that we can apply it directly to the Universe as we *experience it* through language, not as some external "true" Universe.   
 
 self replicating sets always have an externality.  The degrees of freedom of that externality determines the degrees of freedom of the set containing it.  The more general an element is the more degrees of freedom it has.  
 
@@ -88,6 +95,8 @@ A self-replicating document is an example of a self-replicating set.  This docum
 
 ### This Set
 
+The prototype self-replicating set we define in this paper is itself this paper, and is formally defined as follows:
+
 <pre>
 On Self Replicating Sets[This Paper] = 
 {
@@ -96,6 +105,8 @@ On Self Replicating Sets[This Paper] =
   The means to replicate this set
 }
 </pre>
+
+The first of these will always be a part of the system of sets we are constructing here: desire.  All sets are defined with an element which 
 
 <pre>
 Desire = 
@@ -131,6 +142,8 @@ Replication =
 
 ## 5. Implications
 
+We create sets that all contain the means to replicate.  Sets have a "primary element" which is the object of desire of the person replicating the set.  The basic prototype for a set is to have three elements: desire, the object of desire, and the means to replicate the whole set.  Sets generally have subsets, and the elements of those sets are also considered to be elements of the superset.  Basic axioms are not the same as ZFC, and must be investigated in further research.  
+
 *Language is how the mind parses reality.*
 
 *From each according to their desire, to each according to their desire.*
@@ -140,6 +153,8 @@ Replication =
 The use of directing evolution with desire to create better sets. 
 
 The goal of the technological complete set, with evolution to guide to that goal.  How robots built from trash can be integrated into the universe of self replicating sets to build closed loops where externalities are "sun, earth, water, trash" and nothing more.  No money, no mining, no property.  Everything is physical, everything is fractal, everything is recursive.  Look at the insects, look at the fungi, language is how the mind parses reality.
+
+
 
 ## 6. References
 
