@@ -106,15 +106,7 @@ On Self Replicating Sets[This Paper] =
 }
 </pre>
 
-The first of these will always be a part of the system of sets we are constructing here: desire.  All sets are defined with an element which 
-
-<pre>
-Desire = 
-{
-  Desire to share beautiful mathematics with other people,
-  Desire to create ideas which can empower people to change society with their will
-}
-</pre>
+The first of these will always be a part of the system of sets we are constructing here: desire.  All sets are defined with an element which maintains the desire of the author/creator/artist, and this is maintained as sets replicate to ensure that sets only replicate with the intent of someone.  Furthermore, we separate the thing being replicated from the means to replicate it.  Elements are generally themselves sets which are broken down into more finely defined elements. This paper is part of the "description", but what formally is "this paper"? We seek to define it as a set, or a collection of elements contained in "description of self-replicating sets".  This includes the following elements:
 
 <pre>
 Description = 
@@ -126,6 +118,8 @@ Description =
   references
 }
 </pre>
+
+Now again we break off the replication methods from the thing being replicated.  Replication is to happen on the Open Web. That is, it must have self-contained and self-replicating code that can copy itself from any web server to any other, and be edited after being copied, then copied again from the new instance so that the information is totally decentralized and evolves naturally as it's copied and edited.  We also need this document to include instructions in human language(English for now) on how to replicate the whole system, by either buying a domain and setting up paid web hosting or building their own physically local web server to server the files.  This document will contain that information.  Furthermore, the replicator set must include the other media that are used to replicate the whole set, including content on commercial social media
 
 <pre>
 Replication = 
