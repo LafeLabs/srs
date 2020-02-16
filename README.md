@@ -119,7 +119,8 @@ Description =
 }
 </pre>
 
-Now again we break off the replication methods from the thing being replicated.  Replication is to happen on the Open Web. That is, it must have self-contained and self-replicating code that can copy itself from any web server to any other, and be edited after being copied, then copied again from the new instance so that the information is totally decentralized and evolves naturally as it's copied and edited.  We also need this document to include instructions in human language(English for now) on how to replicate the whole system, by either buying a domain and setting up paid web hosting or building their own physically local web server to server the files.  This document will contain that information.  Furthermore, the replicator set must include the other media that are used to replicate the whole set, including content on commercial social media.  
+
+Now again we break off the replication methods from the thing being replicated.  Replication is to happen on the Open Web. That is, it must have self-contained and self-replicating code that can copy itself from any web server to any other, and be edited after being copied, then copied again from the new instance so that the information is totally decentralized and evolves naturally as it's copied and edited.  We also need this document to include instructions in human language(English for now) on how to replicate the whole system, by either buying a domain and setting up paid web hosting or building their own physically local web server to server the files.  This document will contain that information.  Furthermore, the replicator set must include the other media that are used to replicate the whole set, including content on commercial social media.
 
 <pre>
 Replication = 
@@ -194,7 +195,9 @@ The goal of the technological complete set, with evolution to guide to that goal
 
 When we create self-replicating sets based on our desires we can create the ultimate power of the human mind over the Universe.  This is possible in the information as since the Universe as we experience it is made not from the products of reductionist science and math but from words, symbols and ideas in human language.  After we recognize that our worlds are primarily defined by language, and that math and symbols are a fundamental approach to manipulating this reality, we can build a power that is effectively a form of Magick: the ability to change the world according to our desires. 
 
+
 This whole document/set is a specific instance of a more general "thing" which includes a more complex networking system and a language for building up symbols.  This "thing" is so general as to be not useful by itself, which is why this paper needed to be written.  The next self-replicating "thing" to be released into the Open Web will be Action Geometry, which is a system of self-replicating symbols.  Action Geometry in turn is a specific instance of Geometron, a much more general meta-language for building symbols on the Open Web.  Again, Geometron is too general to be of direct use, and so we create the specific instance of Action Geometry[AG] and build that out into a collection of media, both commercial and free, both physical and digital, which can replicate and spread these ideas while also providing tangible value(hence creating the desire for replication without which replication is impossible).
+
 
 ## 6. References
 
