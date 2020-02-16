@@ -139,8 +139,7 @@ Replication =
   server replication,
   pdf replication,
   in-person pitches and classes and discussions,
-  media: email, post cards, posters, signs, commercial social media,
-  manuscript editing to evolve and fork the Document
+  media: email, post cards, posters, signs, commercial social media
 }
 </pre>
 
@@ -160,27 +159,32 @@ The elements of the self-replicating code that can propagate this document acros
 - [dnagenerator.php](php/dnagenerator.txt)
 - [text2php.php](php/text2php.txt)
 
-All of this code can be edited using the program [editor.php](editor.php) which runs on any server that has [php](https://www.php.net/) installed(most web servers).  The file dna.txt represents this list of files, which replicator.php uses to fetch them and copy them to a new server(see below).  README is the text of this document itself, and the name of that file is set by the standards used on [Github](https://github.com/) so that by default any self-replicating document that's put up on Github has its content readable immediately.  The format of the README file is by default [Markdown](https://daringfireball.net/projects/markdown/syntax).  The save and load scripts are required to edit files on the server, and pageeditor is the page that uses these files to edit the main manuscript README.md.  All php files are stored as .txt files so that they can be readable and easily accessed from the open web.  The program text2php.php copies all the files in the directory /
+All of this code can be edited using the program [editor.php](editor.php) which runs on any server that has [php](https://www.php.net/) installed(most web servers).  The file dna.txt represents this list of files, which replicator.php uses to fetch them and copy them to a new server(see below).  README is the text of this document itself, and the name of that file is set by the standards used on [Github](https://github.com/) so that by default any self-replicating document that's put up on Github has its content readable immediately.  The format of the README file is by default [Markdown](https://daringfireball.net/projects/markdown/syntax).  The save and load scripts are required to edit files on the server, and pageeditor is the page that uses these files to edit the main manuscript README.md.  All php files are stored as .txt files so that they can be readable and easily accessed from the open web.  The program text2php.php copies all the files in the php directory to the main web directory and changes the file extension from .txt to .php so that they can run.  The file editor.php edits the copies in the /php directory, and then running text2php makes those programs executable. 
 
 ## Server replication
 
   In order for replication to take place from server to server we need the ability to "colonize" new web servers with this code.  This is done in any of several ways.  Right now the main way is to buy a domain(usually about 10 dollars for the first year), pay for web hosting(5-20 dollars per month), then put the replicator program on the new server and run it.  The second method used is to put a web server on a Raspberry Pi, a computer that can be bought for as little as 35 dollars and fit in a pocket which is excellent for serving web files over a local network.  This allows for a grey area open web that is open to anyone on a local wifi network, and can see the rest of the Open Web but cannot be accessed by users outside that wifi network.  In either case, the replication of the server consists of placing the file "replicator.php" in the main web directory of the new server, then pointing a web browser to [your new servers web address]/replicator.php. This will then cause the program to run, copying the rest of the system and linking to the main page which will display the newly replicated document. 
 
-The technical details of this process must be described briefly here in order for this document to truly self-replicate.  We recommend buying a domain and getting shared hosting on [dreamhost](https://www.dreamhost.com/) because they have proven to work with this code and are affordable and not a scam. One can also use any of several free web hosting options, including [000webhost](https://www.000webhost.com/).  In both cases you will find a file editor screen(this can be a little frustrating to find but always exists) which will allow you to create new files and edit them. Use this to create the file replicator.php and copy the code from [here](php/replicator.txt) into it, save it and close it.
+The technical details of this process must be described briefly here in order for this document to truly self-replicate.  We recommend buying a domain and getting shared hosting on [dreamhost](https://www.dreamhost.com/) because they have proven to work with this code and are affordable and not a scam. One can also use any of several free web hosting options, including [000webhost](https://www.000webhost.com/).  In both cases you will find a file editor screen(this can be a little frustrating to find but always exists) which will allow you to create new files and edit them. Use this to create the file replicator.php and copy the code from [here](php/replicator.txt) into it, save it and close it.  On the Raspberry Pi, replication starts by making a new flash card with the operating system on it.   One must then [install the web server and php language using this set of instructions](https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md).  After that one can move to the main web directory, copy all the files, change permissions, delete the existing page, and run the replicator:
 
+<pre>
+cd /var/www/html
+sudo rm index.html
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/thing/master/php/replicator.txt
+php replicator.php
+sudo chmod -R 0777 *
+hostname -I
+</pre>
 
+Once the whole thing has been copied, to have the *next* copy be a copy of this copy and not its predecessor, use the [code editor](editor.php) to edit the file replicator.php so that it points to the global url for the dna on your new page, not the previous one.  This is done manually for now.  So if you do not do it, the next copy will be not of the new document but of its predecessor.  Note also that once this system is installed anyonen can run any code on your server, so no private or personal data of any kind should ever share a server with this system.  This system assumes that no private data exists unless it's on a physically isolated wifi network, and it must remain separate from the private Internet(especially anything with e-commerce, as stealing financial data would be trivial if that is ever done).
 
- - buy domain, get hosting, copy
- - raspberry pi
- - server farm
- - localhost
+Another good practice as one works with files on the open web is that since we must assume all files might be deleted at any time, but we want the current copy to remain readable not just by us but by all users on the Network, we constantly back up text to free and open but non-editable paste sites like [pastebin.com](https://pastebin.com/).  To fork the whole code, one can edit on a live Open Web server, back up to a pastebin, and copy.  But one can also create a github repository, copy the code locally to your hard drive, edit it on there, run dnagenerator.php to make a new dna file, then point your replicator to your github repository so that many copies can be made without the original being corrupted(using a hybrid betweent the password protected space of Github and the Open Web which copies files from there).  Note that while one can use any code editor for editing the local copy, we can keep a consistent system with the Open Web servers by running php -S localhost:8000 at the command line(I assume people who fork the code in this way know what this means) and connecting a browser to http://localhost:8000 to edit *in situ*.  
 
 
 ### Pdf document
 
- - print page to pdf
- - pandoc+latex
- - word(☠)
+As useful as the Open Web is, it is also useful to have documents in a traditional format which is compatible with physcial paper printers to make copies we can carry outside of digital readers.  To do this we have several options.  We can print from the browser(which will look bad), we can convert to Microsoft Word which will corrupt the file and also look bad, or we can use the LaTeX system which will look great but take more work.  For this initial instance we focus on the LaTeX version.
+
  
 ### Other Media
 
@@ -193,13 +197,6 @@ The technical details of this process must be described briefly here in order fo
  - commercial social media
  - emails
  - elevator pitch
-
-### Evolution and forking
-
- - edit, change replicator, copy, repeat
- - working with github
- - using pastebin
- - forking and the power of infinite forks
 
 ## 5. Conclusions
 
