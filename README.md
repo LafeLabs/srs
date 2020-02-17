@@ -6,6 +6,8 @@
 
 ### [link to edit page](pageeditor.html)
 
+### [paper.pdf](paper.pdf)
+
 ## 1. Computer Science and the Theory of Self-Replication
 
    Throughout the history of modern computing machines, people have contemplated the idea self-replicating machines.  At the dawn of the information age, John Von Neumann in particular devoted thought to the subject, creating a blueprint that people continue to use both for understanding hypothetical self replicating machines and for understanding the architecture of existing computing machines.  At the same time, Alan Turing developed a similar toy model for how generalized computing machines work, which is taught in basic computer science classes to this day.  We will not delve very deeply into these models, but will instead present a very crude sketch of them in order to discuss the assumptions made by computer scientists in the models they build to understand their world.  
@@ -187,6 +189,8 @@ As useful as the Open Web is, it is also useful to have documents in a tradition
 
  
 ### Other Media
+
+All ideas which we desire to propagate on the Open Web need all the typical means of use of media to try to convince others to replicate the document.  In some cases we seek to expliain the whole thing in a tiny capsule of information, as with the "elevator pitch".  In other cases we seek to show by example the power of these ideas.
 
  - postcards
     - mailed
