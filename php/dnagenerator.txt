@@ -17,6 +17,7 @@ dna.txt is a json formatted file which points to all the files in this system, w
             array_push($htmlfiles,$value);
         }
     }
+    array_push($htmlfiles,"paper.pdf");
 
     $dna = json_decode("{}");
     $dna->html = $htmlfiles;
