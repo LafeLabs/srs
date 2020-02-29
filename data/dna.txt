@@ -13,6 +13,7 @@
         "editor.txt",
         "fileloader.txt",
         "filesaver.txt",
+        "md2tex.txt",
         "replicator.txt",
         "text2php.txt"
     ]

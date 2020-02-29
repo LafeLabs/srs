@@ -26,6 +26,7 @@ EGO DEATH:
     <a href = "index.html">index.html</a>
     <a href = "pageeditor.html">pageeditor.html</a>
     <a href = "dnagenerator.php">dnagenerator.php</a>
+    <a href = "md2tex.php">md2tex.php</a>
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
@@ -34,7 +35,8 @@ EGO DEATH:
     <div class = "html file">index.html</div>
     <div class = "html file">pageeditor.html</div>
     <div class = "markdown file">README.md</div>
-
+    <div class = "latex file">texheader.tex</div>
+    <div class = "latex file">paper.tex</div>
 
 <?php 
 
@@ -131,6 +133,11 @@ for(var index = 0;index < files.length;index++){
             document.getElementById("namediv").style.color = "aqua";
             document.getElementById("namediv").style.borderColor = "aqua";
         }
+        if(this.classList[0] == "latex"){
+            editor.getSession().setMode("ace/mode/latex");
+            document.getElementById("namediv").style.color = "blue";
+            document.getElementById("namediv").style.borderColor = "blue";
+        }
 
         document.getElementById("namediv").innerHTML = currentFile;
     }
@@ -201,7 +208,9 @@ body{
 .markdown{
     color:aqua;
 }
-
+.latex{
+    color:blue;
+}
 .file{
     cursor:pointer;
     border-radius:0.25em;
