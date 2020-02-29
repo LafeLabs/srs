@@ -1,7 +1,5 @@
 # On Self-Replicating Sets
 
-possibly change title to "On Self-Replication"? and remove the details about sets?  focus on symbols and machines? make it more general?
-
 ### John. Q Geometer
 
 ### 2020
@@ -67,7 +65,7 @@ The power of a fully self-replicating and evolving Open Web on this scale is tha
 In order to build these documents we must first define the idea of what exactly a self-replicating document is, and how it fits into more general concepts of self-replication.  To that end we will take an excursion into the math known as set theory, which is the next section of this paper.
 
   
-## 4. Self Replicating Sets
+## 4. Self Replicating Sets/Documents
 
 ### Motivation and definitions
 
@@ -165,66 +163,21 @@ The technical details of this process must be described briefly here in order fo
 
 Once the whole thing has been copied, to have the *next* copy be a copy of this copy and not its predecessor, use the [code editor](editor.php) to edit the file replicator.php so that it points to the global url for the dna on your new page, not the previous one.  This is done manually for now.  So if you do not do it, the next copy will be not of the new document but of its predecessor.  Note also that once this system is installed anyone can run any code on your server, so no private or personal data of any kind should ever share a server with this system.  This system assumes that no private data exists unless it's on a physically isolated wifi network, and it must remain separate from the private Internet(especially anything with e-commerce, as stealing financial data would be trivial if that is ever done).
 
-Another good practice as one works with files on the open web is that since we must assume all files might be deleted at any time, but we want the current copy to remain readable not just by us but by all users on the Network, we constantly back up text to free and open but non-editable paste sites like [pastebin.com](https://pastebin.com/).  To fork the whole code, one can edit on a live Open Web server, back up to a pastebin, and copy.  But one can also create a github repository, copy the code locally to your hard drive, edit it on there, run dnagenerator.php to make a new dna file, then point your replicator to your github repository so that many copies can be made without the original being corrupted(using a hybrid betweent the password protected space of Github and the Open Web which copies files from there).  Note that while one can use any code editor for editing the local copy, we can keep a consistent system with the Open Web servers by running php -S localhost:8000 at the command line(I assume people who fork the code in this way know what this means) and connecting a browser to http://localhost:8000 to edit *in situ*.  
+Another good practice as one works with files on the open web is that since we must assume all files might be deleted at any time, but we want the current copy to remain readable not just by us but by all users on the Network, we constantly back up text to free and open but non-editable paste sites like [pastebin.com](https://pastebin.com/).  To fork the whole code, one can edit on a live Open Web server, back up to a pastebin, and copy.  But one can also create a github repository, copy the code locally to your hard drive, edit it on there, run dnagenerator.php to make a new dna file, then point your replicator to your github repository so that many copies can be made without the original being corrupted(using a hybrid between the password-protected space of Github and the Open Web which copies files from there).  Note that while one can use any code editor for editing the local copy, we can keep a consistent system with the Open Web servers by running php -S localhost:8000 at the command line(I assume people who fork the code in this way know what this means) and connecting a browser to http://localhost:8000 to edit *in situ*.  
 
 
 ### Pdf document
 
-As useful as the Open Web is, it is also useful to have documents in a traditional format which is compatible with physcial paper printers to make copies we can carry outside of digital readers.  To do this we have several options.  We can print from the browser(which will look bad), we can convert to Microsoft Word which will corrupt the file and also look bad, or we can use the LaTeX system which will look great but take more work.  For this initial instance we focus on the LaTeX version.
-
+As useful as the Open Web is, it is also useful to have documents in a traditional format which is compatible with physical paper printers to make copies we can carry outside of digital readers.  To do this we have several options.  We can print from the browser(which will look bad), we can convert to Microsoft Word which will corrupt the file and also look bad, or we can use the LaTeX system which will look great but take more work.  For this initial instance we focus on the LaTeX version.  As this document replicates and evolves hopefully more skilled users than the initial author will make smoother systems for conversion but right now a combination of the Haskell library "pandoc" and manual editing of the output file are the easiest way to convert from markdown to LaTeX.  A document produced in this way is included in the replicator of this set.
  
-### Other Media
+## 5.  Generalization and Social Implications
 
-All ideas which we desire to propagate on the Open Web need all the typical means of use of media to try to convince others to replicate the document.  In some cases we seek to expliain the whole thing in a tiny capsule of information, as with the "elevator pitch".  In other cases we seek to show by example the power of these ideas.
+All ideas which we desire to propagate on the Open Web need all the typical means of use of media to try to convince others to replicate the document.  In some cases we seek to explain the whole thing in a tiny capsule of information, as with the "elevator pitch".  In other cases we seek to show by example the power of these ideas.  The media we expect will be used in the spread of this system include *all* media in the most general sense, including physical things like machines which carry various writing on them.  Any physical thing can have a domain name on them which points to a document which describes how to replicate the physical thing.  This extremely generalized definition of self-replicating document(as a type of self-replicating set) means any physical object can be thought of as a self-replicating document.  Combined with the "Open Web" defined above, this can create an entire universe of useful things we can use to make up the fabric of our lives, building sets to live in which are independent of the existing industrial order.
 
- - postcards
-    - mailed
-    - given away in person
- - printouts
- - posters
- - signs 
- - commercial social media
- - emails
- - elevator pitch
+Ultimately if we can build sets that we have the capability to evolve based on our desires, we can push that evolution toward what we call a "technological complete set".  That is a set which describes a full self-replicating system that we can live in, which can exist in equilibrium with its environment just as pre-industrial societies did before the whole world was consumed by one very destructive set.  In a complete set, the people who live in that set(we place ourselves conceptually into the set) have everything they need for a good life such as medicine, abundant food, clean water, the ability to live in a comfortable temperature etc.  In addition, a set is not complete if it is out of equilibrium: if a set requires constantly destroying things and not replacing them to exist it is not complete.   As we look to the future this is possible in a way that is totally different from what was possible before the rise of industrial society.  A future complete set based society has no reason to mine, since the quantity of material that has been extracted from the Earth and processed into very ordered structures is more than enough for a large human population to live on indefinitely.  
 
-## 5. Conclusions
+This Technological Complete Set does not need to be designed and built by any one person or group.  All that is needed to achieve such a set is to build sets which people have the capacity to evolve based on desire, and to impart into a group of people the desire to achieve this set(given the assumption that such a set is physically attainable).  This document is meant to describe such a set, but also to serve as a seed which the author hopes will evolve in such a direction. By itself it is probably insufficient to build a large complex system, but it provides a prototype for a number of other self-replicating sets which we will construct and replicate over the Open Web.  It is the nature of such sets that as they are created and released into the wild, they will all build on each other with network effects and that a small amount of exponential growth early on can create very large effects as the system evolves.
 
-We create sets that all contain the means to replicate.  Sets have a "primary element" which is the object of desire of the person replicating the set.  The basic prototype for a set is to have three elements: desire, the object of desire, and the means to replicate the whole set.  Sets generally have subsets, and the elements of those sets are also considered to be elements of the superset.  Basic axioms are not the same as ZFC, and must be investigated in further research.  
+What is next in this program?  The self-replicating sets which are currently being created and released are largely about replicating symbols.  Symbols and logos play a very powerful role in how our minds process the world around us. The ability to create a self-replicating symbol which has some intention imposed on it is one of the most powerful forces in our world today.  This is the power corporations wield with their brands, logos, and marketing messages.  By building systems for very rapidly creating symbols, giving them meaning, and replicating them, we empower the masses with this same power. The  media for the symbols includes artistic tools for physical media creation(stationary, wall art, postcards, signs) and digital media creation(vector graphics of simple geometric logos).  From this power, we hope to build a fire that consumes the media landscape and transforms the nature of human existence on this planet.
 
-
-money is a self replicating set. its number of degrees of freedom is limited.  it is similar to the universal truth machine in that it is essentially binary: a person can either "afford" something or not, and we can view money as a function mapping all people onto 1 or 0 just as a universal truth machine maps all statements to either True or False.  Self replicating set theory encompasses money but generalizes to a larger class of sets which have effectively infinitely more degrees of freedom than money.
-
-
-*Language is how the mind parses reality.*
-
-*From each according to their desire, to each according to their desire.*
-
-private property: we have no need of that hypothesis
-
-  By building a universe of self replicating things based on the desire of the author of the documents we can build a universe for our minds to live in 
-
-The use of directing evolution with desire to create better sets. 
-
-We examine self-replication in capitalism: how does money replicate, how does property replicate, how do mined materials replicate?  These systems have more degrees of freedom than some that came before but effectively infinitely fewer than what will come after: self-replicating sets. 
-
-The goal of the technological complete set, with evolution to guide to that goal.  How robots built from trash can be integrated into the universe of self replicating sets to build closed loops where externalities are "sun, earth, water, trash" and nothing more.  No money, no mining, no property.  Everything is physical, everything is fractal, everything is recursive.  Look at the insects, look at the fungi, language is how the mind parses reality.
-
-When we create self-replicating sets based on our desires we can create the ultimate power of the human mind over the Universe.  This is possible in the information as since the Universe as we experience it is made not from the products of reductionist science and math but from words, symbols and ideas in human language.  After we recognize that our worlds are primarily defined by language, and that math and symbols are a fundamental approach to manipulating this reality, we can build a power that is effectively a form of Magick: the ability to change the world according to our desires. 
-
-
-This whole document/set is a specific instance of a more general "thing" which includes a more complex networking system and a language for building up symbols.  This "thing" is so general as to be not useful by itself, which is why this paper needed to be written.  The next self-replicating "thing" to be released into the Open Web will be Action Geometry, which is a system of self-replicating symbols.  Action Geometry in turn is a specific instance of Geometron, a much more general meta-language for building symbols on the Open Web.  Again, Geometron is too general to be of direct use, and so we create the specific instance of Action Geometry[AG] and build that out into a collection of media, both commercial and free, both physical and digital, which can replicate and spread these ideas while also providing tangible value(hence creating the desire for replication without which replication is impossible).  Even Action Geometry is too general to have a set replicate rapidly enough to be relevant.  For that we focus the entirety of this system of information into just the notion of the self-replicating symbol.   Symbol itself is an extremely general concept.   What will therefor be presented in the next work is an extension of Leibniz's work on what he called the *characteristica universalis* or universal symbolic language.  The full language will involve a mixture of all the techniques presented here, but to aid replication it will be focused down into single symbol sets which replicate with the minimum possible number of components and the maximum number of degrees of freedom.
-
-
-A complete set is defined as a set which provides all human needs.  This is subjective and constantly evolving.  Our task is to create self-replicating sets which we have the power to evolve in such a way that they tend toward becoming complete.  Unlike the creators of axiomatic set theory of the last century, we accept that this is not a precisely defined goal which can be proven to have been achieved or failed.  Rather, it is a goal and a means to work toward that goal.  On the other hand, this is no longer a goal restricted to increasing the fame of working mathematicians but one of improving the lives of not only every human on this planet but of all other living things whose fate are now bound to ours by the global technological system.
-
-
-## 6. References
-
-[1]  Von Neumann
-[2]  Merkle
-[3]  Drexler
-[4]  penrose
-[5]  dawkins
-[6]  reggia
-[7]  turing...but mostly wikipedia
 
