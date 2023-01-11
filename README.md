@@ -1,6 +1,6 @@
 # On Self-Replicating Sets
 
-### John. Q Geometer
+### TRASH ROBOT
 
 ### 2020
 
